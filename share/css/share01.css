@@ -1,0 +1,99 @@
+.header{
+   width:100%;
+}
+.title01,.title02{
+	position: relative;
+	width:100%;
+}
+.name{
+    position: absolute;
+    top: 1.44rem;
+    left: 4.7rem;
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: #fff;
+    width: 2.9rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: left;
+}
+.jifen{
+   position: absolute;
+    top: 2.43rem;
+    left: 5.38rem;
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: left;
+}
+.img{
+    position: absolute;
+    top: 6.3rem;
+    left: 3.65rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 2.7rem;
+}
+.openApp {
+    position: absolute;
+    top: 1.61rem;
+    left: .33rem;
+    width: 9.3rem;
+    height: 1.1rem;
+}
+.footer{
+	width: 100%;
+	background-color: #f7b788;
+}
+.footer ul{
+	width: 100%;
+}
+ .divs{
+ 	 width: 100%;
+ 	 border-bottom:1px solid #fff;
+ 	 padding:.4rem;
+}
+.left{
+	float: left;
+	width: 3rem;
+}
+.left img{
+	width:3rem;
+	height: 2rem;
+}
+.right{
+	float: right;
+	width: 6.2rem;
+	margin-right:.4rem;
+}
+.text1{
+	color:#fd5f37;
+	font-size:.5rem;
+	font-weight:600;
+}
+.text2{
+	font-size: .4rem;
+    font-family: "微软雅黑";
+    overflow: hidden;
+    height: .5rem;
+    margin: .15rem 0;
+}
+.text3,.text4{
+	font-size:.4rem;
+	font-family: "微软雅黑";
+}
+.text22{
+	width: 5rem;
+	display: inline-block;
+	float: left;
+}
+.text2 span{
+	font-size:.4rem;
+	line-height:.3rem;
+}
