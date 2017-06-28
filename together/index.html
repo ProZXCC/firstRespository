@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<head> 
+<html lang="en">
+<meta charset="UTF-8">
+    <title></title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+    <title>一起学</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+      <div id="app">
+         <div class="head clearfix">
+               <span class="head01 fl"><</span>
+               <span class="head02 fl">X</span>
+               <span class="head03">一起学</span>
+               <span class="head04 fr">...</span>
+         </div>
+         <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img v-bind:src="img1" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img v-bind:src="img2" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                   <img v-bind:src="img3" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                      <img v-bind:src="img4" alt="">
+                  </div>
+                </div>
+              <div class="swiper-pagination"></div> 
+          </div>
+          <div class="main">
+        <div class="title01"><span><img v-bind:src="fire" alt=""></span><i>最热课程</i></div>
+        <div v-for="item in course" class="course clearfix">
+            <div class="left fl">
+              <img v-bind:src="item.imgsrc" alt="">
+              <span class="name">{{item.name}}</span>
+            </div>
+            <div class="right fr">
+              <p class="t01 fl">{{item.title01}}</p>
+              <p class="fl t02">时间:<span>{{item.time}}</span><span class="fr"><img v-bind:src="cloak" alt="" class="fl"><span class="fr sec">{{item.sec}}</span></span></p>
+             <p>参与人数: <span>{{item.people}}</span>人  <span class="come">{{item.come}}</span>人已参加</p>
+            </div>
+        </div>
+          </div>
+      </div>
+
+
+           
+</body>
+<script src="js/base.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript" src='js/vue.min.js'></script>
+<script >
+  window.onload=function(){
+     var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay:1000,
+            autoplayDisableOnInteraction:false,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+
+        })
+  }
+ </script><script>
+var vm = new Vue({
+   el:'#app',
+   data:{
+          img1:"images/l4.jpg",
+          img2:"images/l1.jpg",
+          img3:"images/l2.jpg",
+          img4:"images/l3.jpg",
+          fire:"images/fire.png",
+          cloak:"images/cloak.png",
+          course:[{
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            name:'甜头菜'
+          },
+          {
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            name:'jhon'
+          },
+          {
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            name:'ering'
+          },
+          {
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            'name':'方付通'
+
+          },
+          {
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            name:'payd'
+          },
+          {
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            name:'payd'
+          },
+          {
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            name:'payd'
+          },
+          {
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            name:'payd'
+          },
+          {
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            name:'payd'
+          },
+          {
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            name:'payd'
+          },
+          {
+            title01:'帮助妈妈快乐的回到职场',
+            time:"2017/02/23 10:00",
+            sec:"36.56",
+            people:"30",
+            come:'28',
+            imgsrc:"images/l1.jpg",
+            name:'payd'
+          }]
+   },
+   init:(function(){
+       var _self = this;
+       
+      
+   })(),
+   // ready:(function(){
+   //    console.log("我怎么那么倒霉");
+   // })(),
+   methods:{
+      output:function(){
+       var _self = this;
+       _self.text1="没事，明天会更好";
+            
+      }
+   }
+});
+
+</script>
+
+</html>

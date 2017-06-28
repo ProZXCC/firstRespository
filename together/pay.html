@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head> 
+<html lang="en">
+<meta charset="UTF-8">
+    <title></title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+    <title>一起学</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/pay.css">
+</head>
+
+<body>
+      <div id="app">
+         <div class="head clearfix">
+               <span class="head01 fl"><</span>
+               <span class="head02 fl">X</span>
+               <span class="head03">一起学</span>
+               <span class="head04 fr">...</span>
+         </div>
+         <div class="imgS">
+           <img v-bind:src="people" alt="">
+           <p class="tit01">目前有<span>{{news.come}}</span>人和你一起参与课程</p>
+         </div> 
+         <div class="content">
+           <p class="tit02 clearfix"><span class="fl">微信支付</span><span class="fr"><i class="fl i1" >￥{{news.money}}</i><i class="i2">￥{{news.yuan}}</i></span></p>
+           <p class="tit02 clearfix"><span class="fl">请好友学习</span><span class="fr"><i class="fl i3" >获取电话簿号码</i><img v-bind:src="phone" alt=""></span></p>
+           <p><span class="fr xuzhi"><img v-bind:src="not" alt="" class="fl"><i class="fl"><a href="#">购票须知</a></i></p>
+         </div>
+         <div class="join" v-on:click="join">确认支付</div>
+         
+      </div>        
+</body>
+<script src="js/base.js"></script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src='js/vue.min.js'></script>
+<script>
+var vm = new Vue({
+   el:'#app',
+   data:{
+          people:"images/pay.png",
+          not:"images/xiang03.png",
+          news:{come:'28',money:'10.00',yuan:'20.00'},
+          phone:'images/phone.png'
+   },
+   init:(function(){
+       var _self = this;
+       
+      
+   })(),
+   // ready:(function(){
+   //    console.log("我怎么那么倒霉");
+   // })(),
+   methods:{
+       join:function(){
+       var _self = this;
+       alert('去支付页面');
+            
+      }
+   }
+});
+
+</script>
+
+</html>
